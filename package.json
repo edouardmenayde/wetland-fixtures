@@ -1,0 +1,20 @@
+{
+  "name": "wetland-fixtures",
+  "version": "0.0.1",
+  "description": "Fixtures support for wetland.",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "scripts": {
+    "test": "mocha src/test/helper src/test/unit/**"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.1",
+    "rimraf": "^2.6.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "sqlite3": "^3.1.8",
+    "wetland": "^2.1.0"
+  }
+}
