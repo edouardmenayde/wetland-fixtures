@@ -16,6 +16,15 @@ function getWetland() {
   return new Wetland({
     dataDirectory: `${tmpDir}/.data`,
     stores       : {
+      // defaultStore: {
+      //   client    : 'mysql',
+      //   connection: {
+      //     host    : '127.0.0.1',
+      //     user    : 'root',
+      //     password: '',
+      //     database: 'wetlandfixtures'
+      //   }
+      // },
       defaultStore: {
         client          : 'sqlite3',
         useNullAsDefault: true,
@@ -31,10 +40,12 @@ function getWetland() {
 
 const users = [
   {
+    id      : 90,
     username: 'Test',
     password: 'jkladhjskhioasdjkl'
   },
   {
+    id      : 180,
     username: 'Ytes',
     password: '45678423123'
   }
